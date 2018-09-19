@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f7"
+    android:fitsSystemWindows="true"
+    android:id="@+id/hall_cabin_constraint_main">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/hall_cabin_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f2f7"
+        android:fitsSystemWindows="true">
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_hallcabin"
+        android:layout_width="match_parent"
+        android:layout_height="239dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:expanded="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout_hallcabin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_admin_dept_main"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="0dp">
+
+            <include layout="@layout/content_hall_cabin" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <iammert.com.view.scalinglib.ScalingLayout
+
+        android:layout_width="300dp"
+        android:layout_height="41dp"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:focusable="true"
+        android:stateListAnimator="@animator/sl_state_animator"
+        android:visibility="visible"
+        app:layout_behavior="iammert.com.view.scalinglib.ScalingLayoutBehavior"
+        app:radiusFactor="1"
+
+        tools:ignore="UnusedAttribute">
+
+        <LinearLayout
+            android:id="@+id/btn_admin_dept_main_bookl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:id="@+id/imageViewWatchNow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:contentDescription="TODO"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toEndOf="@+id/imageViewWatchNow"
+                    android:layout_toRightOf="@+id/imageViewWatchNow"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Book"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </iammert.com.view.scalinglib.ScalingLayout>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/antic_didone</item>
+        <item>@font/balthazar</item>
+        <item>@font/buenard</item>
+        <item>@font/cabin</item>
+        <item>@font/cherry_swash</item>
+        <item>@font/comfortaa_light</item>
+        <item>@font/linden_hill</item>
+        <item>@font/neuton_extralight</item>
+        <item>@font/nixie_one</item>
+        <item>@font/timmana</item>
+    </array>
+</resources>

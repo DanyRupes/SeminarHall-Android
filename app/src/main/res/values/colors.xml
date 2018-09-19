@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <color name="colorPrimary">#61174a</color>
+    <color name="colorPrimaryDark">#992475</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+
+    <color name="bg_light">#fafafa</color>
+
+    <color name="bottomtab_item_resting">#36000000</color>
+    <color name="bottomtab_item_disabled">#1e000000</color>
+
+    <color name="bottomtab_home">#1fbaf2</color>
+    <color name="bottomtab_pending">#ede61a</color>
+    <color name="bottomtab_booked">#13c664</color>
+    <color name="bottomtab_inbox">#5d53e8</color>
+    <color name="bottomtab_account">#e51293</color>
+    <color name="not_Selected">#610596</color>
+    <color name="colorPrimaryNight">#3F51B5</color>
+    <color name="colorPrimaryDarkNight">#303F9F</color>
+    <color name="colorAccentNight">#FFC107</color>
+    <color name="bg_dark">#263238</color>
+
+    <color name="divider_light">#0c000000</color>
+
+    <color name="colortrans">#00000000</color>
+    <color name="ColorBackText">#fff200</color>
+    <color name="toolbar_back">#f5f6fa</color>
+    <color name="toolbar_text">#7158e2</color>
+    <color name="textPurple">#130f40</color>
+    <color name="colorYellow">#fff200</color>
+    <color name="black">#000000</color>
+    <color name="mdtp_accent_color">#009688</color>
+    <color name="mdtp_accent_color_dark">#00796b</color>
+    <color name="back_button">#2c2c54</color>
+
+    <!--Sigin in-->
+    <color name="col_gsign_purple">#2c2c54</color>
+    <color name="col_gsing_blue">#03a2fe</color>
+
+    <color name="white">#ffffff</color>
+    <color name="homecard_blue">#27A9E3</color>
+    <color name="homedept_titlte">#fff30b</color>
+
+
+
+
+</resources>

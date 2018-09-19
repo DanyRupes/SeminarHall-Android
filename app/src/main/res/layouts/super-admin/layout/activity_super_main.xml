@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Superadmin.SuperMain">
+
+
+    <com.aurelhubert.ahbottomnavigation.AHBottomNavigationViewPager
+        android:id="@+id/abottom_superman_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/abottom_superman_nav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.aurelhubert.ahbottomnavigation.AHBottomNavigationViewPager>
+
+
+    <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+        android:id="@+id/abottom_superman_nav"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </com.aurelhubert.ahbottomnavigation.AHBottomNavigation>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "947725322714",
+    "firebase_url": "https://srec-shb.firebaseio.com",
+    "project_id": "srec-shb",
+    "storage_bucket": "srec-shb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:947725322714:android:aeab4a35eba1a279",
+        "android_client_info": {
+          "package_name": "com.techie_dany.srecshb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "947725322714-3tl4eqtg9qvn1j2o2bvmkdofu3r56uca.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.techie_dany.srecshb",
+            "certificate_hash": "0082d7fd376defb7c8d814c634c0120ed2c0bab5"
+          }
+        },
+        {
+          "client_id": "947725322714-t98b4i7a2ls6sgj3ov1cjuhe137gs3u3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5fx8ndfuDaeNqBXLbWOK5Raemhy_cS4g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "947725322714-t98b4i7a2ls6sgj3ov1cjuhe137gs3u3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

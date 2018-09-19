@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingDefaultResource"
+    android:layout_marginLeft="19dp">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/booking_home_card"
+        android:layout_width="115dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toTopOf="@+id/book_timing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent">
+
+            <TextView
+                android:id="@+id/booking_home_status"
+                android:layout_width="106dp"
+                android:layout_height="109dp"
+                android:fontFamily="@font/buenard"
+                android:gravity="center"
+
+                android:text="Status"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="60dp"
+                android:textStyle="bold"
+                android:typeface="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                tools:text="1" />
+
+            <CheckBox
+                android:id="@+id/book_home_checkBox"
+                style="?attr/checkboxStyle"
+                android:layout_width="34dp"
+                android:layout_height="33dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.987"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/book_timing"
+        android:layout_width="134dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="serif"
+        android:text="8.45 Am - 9.40 AM"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/space"
+        app:layout_constraintEnd_toEndOf="@+id/booking_home_card"
+        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintStart_toStartOf="@+id/booking_home_card"
+        app:layout_constraintTop_toBottomOf="@+id/booking_home_card"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="108dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

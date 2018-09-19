@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.techie_dany.srecshb">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.INSTALL_LOCATION_PROVIDER"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.CONTROL_LOCATION_UPDATES"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.LOCATION_HARDWARE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission
+        android:name="android.permission.INSTALL_LOCATION_PROVIDER"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.ACCESS_MOCK_LOCATION"
+        tools:ignore="MockLocation,ProtectedPermissions" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_shb"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_shb"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service android:name=".messaging.MyFirebaseMessaging">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_home_black_24dp" />
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".login.GSignIn"
+            android:theme="@style/gisignin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".admin.AdminMain"
+            android:label="@string/title_activity_admin_main" />
+        <activity
+            android:name=".peoples.Hall_Cabin"
+            android:label="@string/title_activity_admin_department"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".admin.activities.BookingHome"
+            android:label="@string/title_activity_booking_home"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".admin.activities.BookingZet" />
+        <activity android:name=".Superadmin.SuperMain">
+            <intent-filter>
+                <action android:name="com.techie_dany.srecshb.firenotify" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".admin_superadmin.ViewChannel" />
+        <activity android:name=".TestActivity" >
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+    </application>
+
+</manifest>
